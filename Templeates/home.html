@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Welcome to train info application</h1>
+    <h1><a href="http://127.0.0.1:8000/train_details" target="_blank">Click here to train info</a></h1>
+    <br>
+    <br>
+    <h1><a href="http://127.0.0.1:8000/report" target="_blank">Click here to enter train report</a></h1>
+    <br>
+    <br>
+    <h1><a href="http://127.0.0.1:8000/train_fare" target="_blank">Click here to train info</a></h1>
+    <br>
+    <br>
+  <form method="post">
+      <h2>The below form is from Django Forms</h2>
+      {{form_d.as_p}}
+      {%csrf_token%}
+    <input type="submit" name="" value="submit">
+    </form>
+  </body>
+</html>
